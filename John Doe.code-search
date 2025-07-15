@@ -1,0 +1,9 @@
+# Query: John Doe
+# ContextLines: 1
+
+1 个结果 - 1 个文件
+
+src/App.jsx:
+  23            <h2 className="text-6xl md:text-8xl font-extrabold tracking-tighter mb-4">
+  24:             HELLO,WORLD
+  25            </h2>
