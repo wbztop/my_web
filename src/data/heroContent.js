@@ -11,7 +11,7 @@ export const heroContent = {
       {
         name: '微信',
         icon: 'Wechat',
-        wechatId: 'wbz361x', // 请替换为您的微信号
+        wechatId: 'wbz361x', 
       },
       {
         name: 'QQ',
@@ -28,7 +28,11 @@ export const heroContent = {
   extended: {
     title: '关于我',
     paragraphs: [
-      '这是一个很长的段落，以确保页面可以滚动。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam. Proin sed quam. Etiam vel neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In hac habitasse platea dictumst. Integer tempus, elit in laoreet posuere, lectus neque blandit dui, et placerat urna diam mattis orci. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,',
+      '你好，我是王博智，一名热爱探索和创造的开发者。这个网站是我用来分享我的想法、项目和生活点滴的地方。',
+      '我热衷于用代码解决实际问题，并对新技术充满好奇。在这里，你可以找到我的开源项目、技术文章，以及一些我正在进行中的实验。',
+      '除了编程，我还喜欢阅读、写作和玩 Minecraft。我相信，无论是构建一个复杂的软件，还是在虚拟世界里创造一个新家园，都源于同样的创造热情。',
+      '当然，上面是AI瞎写的hhh，空着不好看，下面是真的。',
+      '我正在为Minecraft服务器的开发和运营招募技术合作伙伴，如你对此感兴趣，请尽快联系我。',
     ],
   },
 }

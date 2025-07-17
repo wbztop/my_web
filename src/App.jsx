@@ -61,7 +61,7 @@ function App() {
         </div>
       </header>
 
-      <main className='flex-1 container mx-auto max-w-screen-2xl px-4 py-8'>
+      <main className='flex-1 container mx-auto max-w-screen-2xl px-4 py-8 flex flex-col justify-center'>
         <Suspense fallback={skeletonComponents[activeView]}>
           <AnimatePresence mode='wait'>
             <motion.div

@@ -10,6 +10,7 @@ import { Button } from '../ui/button'
 import wechatQrcode from '../../assets/wechat_qrcode.png'
 import qqQrcode from '../../assets/qq_qrcode.png'
 import Modal from '../ui/Modal'
+import pigIcon from '../../assets/pig.png'
 
 const Hero = () => {
   const [isWechatModalOpen, setIsWechatModalOpen] = useState(false)
@@ -155,7 +156,29 @@ const Hero = () => {
     </>
   )
 
-  return <Section initialContent={initialContent}></Section>
+  return (
+    <Section initialContent={initialContent}>
+      <div className='max-w-5xl mx-auto'>
+        <div className='grid md:grid-cols-3 gap-12 items-center'>
+          <div className='md:col-span-1'>
+            <img
+              src={pigIcon}
+              alt='Profile'
+              className='rounded-full mx-auto w-48 h-48 object-cover shadow-lg'
+            />
+          </div>
+          <div className='md:col-span-2 text-lg text-stone-600 space-y-6 text-left'>
+            <h3 className='text-4xl font-bold tracking-tight text-center mb-8'>
+              {heroContent.extended.title}
+            </h3>
+            {heroContent.extended.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Section>
+  )
 }
 
 export default Hero
