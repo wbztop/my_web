@@ -1,26 +1,12 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { buttonVariants } from '@/components/ui/button-variants';
 import { cn } from '@/lib/utils';
+import pigIcon from '../../assets/pig.png';
 
-import Footer from './components/Footer/Footer';
-import pigIcon from './assets/pig.png';
-
-import './App.css'
-
-
-
-const navItems = [
-  { to: '/', label: '主页' },
-  { to: '/minecraft', label: 'Minecraft' },
-  { to: '/novels', label: '小说' },
-  { to: '/fries', label: '薯条' },
-];
-
-function App() {
-
+const SubPageLayout = ({ navItems, children }) => {
   return (
-    <div className='min-h-screen bg-gradient-to-b from-stone-50 to-stone-100 text-stone-800 font-sans flex flex-col'>
+    <div className='flex flex-col min-h-screen bg-gradient-to-b from-stone-50 to-stone-100 text-stone-800 font-sans'>
       <header className='sticky top-0 z-50 w-full border-b border-stone-200/60 bg-white/80 backdrop-blur-sm'>
         <div className='container mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-4'>
           <div className='flex items-center gap-3'>
@@ -45,14 +31,11 @@ function App() {
           </nav>
         </div>
       </header>
-
-      <main className='flex-1'>
-        <Outlet />
+      <main className='flex-1 flex flex-col items-center p-8'>
+        {children}
       </main>
-
-      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default SubPageLayout;

@@ -172,7 +172,7 @@ const Hero = () => {
               {heroContent.extended.title}
             </h3>
             {heroContent.extended.paragraphs.map((p, i) => (
-              <p key={i}>{p}</p>
+              <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
             ))}
           </div>
         </div>
