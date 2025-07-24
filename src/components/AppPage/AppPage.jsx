@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { appPageContent } from '../../data/appPageContent';
 import SubPageLayout from '../ui/SubPageLayout';
 
@@ -9,6 +9,10 @@ const appNavItems = [
 ];
 
 const AppPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <SubPageLayout navItems={appNavItems}>
       <div className='h-screen flex items-center justify-center'>

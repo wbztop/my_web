@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { webNovelPageContent } from '../../data/webNovelPageContent';
 import SubPageLayout from '../ui/SubPageLayout';
 
@@ -9,6 +9,10 @@ const webNovelNavItems = [
 ];
 
 const WebNovelPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <SubPageLayout navItems={webNovelNavItems}>
       <div className='h-screen flex items-center justify-center'>

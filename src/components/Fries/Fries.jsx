@@ -24,6 +24,8 @@ const Fries = () => {
           <Link to="/app" className='bg-stone-800 text-white py-2 px-6 rounded-lg hover:bg-stone-700 transition-colors'>APP</Link>
           <Link to="/web-novel" className='bg-stone-800 text-white py-2 px-6 rounded-lg hover:bg-stone-700 transition-colors'>网络小说</Link>
           <Link to="/anime" className='bg-stone-800 text-white py-2 px-6 rounded-lg hover:bg-stone-700 transition-colors'>动漫</Link>
+          <Link to="/game" className='bg-stone-800 text-white py-2 px-6 rounded-lg hover:bg-stone-700 transition-colors'>游戏</Link>
+          <Link to="/minecraft-server" className='bg-stone-800 text-white py-2 px-6 rounded-lg hover:bg-stone-700 transition-colors'>Minecraft Server</Link>
         </div>
       </div>
       <div className='max-w-5xl mx-auto'>

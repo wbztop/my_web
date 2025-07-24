@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { animePageContent } from '../../data/animePageContent';
 import SubPageLayout from '../ui/SubPageLayout';
 
@@ -9,6 +9,10 @@ const animeNavItems = [
 ];
 
 const AnimePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <SubPageLayout navItems={animeNavItems}>
       <div className='h-screen flex items-center justify-center'>

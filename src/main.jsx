@@ -6,6 +6,8 @@ import AllNovels from './components/AllNovels/AllNovels.jsx';
 import AppPage from './components/AppPage/AppPage.jsx';
 import WebNovelPage from './components/WebNovelPage/WebNovelPage.jsx';
 import AnimePage from './components/AnimePage/AnimePage.jsx';
+import GamePage from './components/GamePage/GamePage.jsx';
+import MinecraftServerPage from './components/MinecraftServerPage/MinecraftServerPage.jsx';
 
 import './index.css';
 
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
   {
     path: '/anime',
     element: <AnimePage />,
+  },
+  {
+    path: '/game',
+    element: <GamePage />,
+  },
+  {
+    path: '/minecraft-server',
+    element: <MinecraftServerPage />,
   },
 ]);
 
